@@ -4,11 +4,7 @@
 
 * Clone this project.
 
-> git clone https://github.com/Solid129/exam-page-app
-
-* open directory `exam_page`
-
-> cd exam_page
+> git clone https://github.com/Solid129/exam-page
 
 * Install dependencies of the project
 
