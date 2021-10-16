@@ -31,14 +31,33 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      exam: null,
+      exam: {
+        examDurationInMinutes: 120,
+        sections: [
+          {
+            maths: [
+              { qnum: "1", quesText: "What is square of 2?", option1: "1", option2: "2", option3: "3", option4: "4" }
+            ]
+          },
+          {
+            english: [
+              { qnum: "1", quesText: "Which of the following sentences is grammatically incorrect?", option1: "Is this your jacket?", "option2": "Whose jacket is this?", "option3": "Is this jacket yours?", "option4": "Who's jacket is this?" }
+            ]
+          },
+          {
+            science: [
+              { qnum: "1", quesText: "What is total number of planets in our solar system?", option1: "6", option2: "7", option3: "8", option4: "9" }
+            ]
+          }
+        ]
+      },
       examStarted: false,
       errorMessage: ""
     };
   }
 
   componentWillMount() {
-    this.fetchData();
+    // this.fetchData();
   }
 
   fetchData() {
